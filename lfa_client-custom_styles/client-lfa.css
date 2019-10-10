@@ -1,0 +1,237 @@
+
+/* General styles ------------------------ */
+.lfa_style-bottom_line{
+	border-bottom: solid 1px #b3b0b0;
+}
+
+.lfa_style-bottom_line_w_padding{
+	border-bottom: solid 1px #b3b0b0;
+	padding-bottom: 25px;
+}
+
+.lfa_style-line_height-25px{
+	line-height: 25px;
+}
+
+.lfa_style-video-80_percent{
+	max-width: 80%;
+	margin:auto;
+}
+
+/* Tabs - internal Accordion */
+
+@media screen and (min-width: 600px){
+	.lfa_style-tab_accordion-header>header .fsElementTitle{
+		border: 1px solid #d7d3d3;
+		border-bottom: 0;
+	}
+	.lfa_style-accord-tab-bottom_line{
+		border-bottom: solid 1px #d7d3d3;
+	}
+}
+
+@media screen and (max-width: 599px){
+	.lfa_style-tab_accordion-header>header .fsElementTitle{
+		border: none;
+	}
+	.lfa_style-accord-tab-bottom_line{
+		border-bottom: none;
+	}	
+}
+
+.fsElementContent>.lfa_style-tab_accordion-content{
+	padding: 10px 30px 40px;
+}
+
+/* FAQ card - link color*/
+
+.lfa_style-faq_link{
+	color:#ffffff;
+}
+
+@media screen and (max-width: 350px){
+	.lfa_style-faq-margin{
+			margin-left: -25px;
+ 	  	margin-right: -25px;
+		}
+ 	}
+@media screen and (min-width: 351px){
+	.lfa_style-faq-margin{
+			margin:auto;
+		}
+	}
+
+/* Employment Page - Diversity - maybe combine with art box @media if it is kept the same? -------------- */
+
+@media screen and (min-width: 900px){
+	.lfa_style-diversity_gif{
+		max-width: 65%;
+		padding: 25px 0px;
+	}
+}
+
+@media screen and (max-width: 899px){
+	.lfa_style-diversity_gif{
+		max-width: 100%;
+		padding: 15px 0px;
+	}
+}
+
+/* Art with Type overlay styles ------------ */
+.lfa_style-no_repeat{
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.lfa_style-arts_box{
+	position: relative; 
+	text-align: center;
+	height: 267px;
+	overflow:hidden;
+}
+
+@media screen and (min-width: 900px){
+	.lfa_style-arts_box{
+		width: 100%; 
+	}
+}
+
+@media screen and (min-width: 441px) and (max-width: 899px){
+	.lfa_style-arts_box{
+	margin: auto;
+	width: 401px; 
+	}
+}
+
+@media screen and (max-width: 440px){
+	.lfa_style-arts_box{
+	margin: auto;
+	}
+}
+
+.lfa_style-arts_box_overlay{
+	position: absolute;
+	z-index: 1;
+	color: rgb(0,0,0);
+	width: 100%;
+	top: 70%;
+	box-sizing: border-box;
+	transition-property: top;
+	transition-duration: 250ms;
+}
+
+.lfa_style-arts_title, .lfa_style-arts_content{
+	background: rgba(0, 0, 0, .7);
+	padding: 12px 1em;
+}
+
+.lfa_style-arts_title{
+	color: #fff; 
+	font-weight: bold; 
+	font-size: 1.3em;
+	line-height:22px;
+}
+
+.lfa_style-arts_content{
+	color: #fff;
+	line-height:1.5em;
+	opacity: 0;
+	min-height:260px;
+	transition-property: opacity;
+	transition-duration: 500ms;
+	transition-delay: 150ms;
+}
+
+.lfa_style-arts_box_overlay:hover .lfa_style-arts_content{
+	opacity: 1;
+}
+
+.lfa_style-arts_box_overlay:hover{
+	top: 0%;
+}
+
+/* Art with Type overlay old ---------------------below */
+
+.lfa_style-type_box_overlay{
+	position: absolute; 
+	/*width: 65%; */
+	width: 234px;
+	height: 25%; 
+	background-color: rgba(0, 0, 0, .7); 
+	top: 80%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+}
+
+.lfa_style-type_overlay{
+	position: absolute; 
+	top: 80%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	color: #fff; 
+	font-weight: bold; 
+	font-size: 1.3em;
+	line-height:22px;
+}
+
+
+/* Constituent Manager - profile display styles ----------------- */
+.lfa_style-constituent{
+	line-height: 25px;
+}
+
+.lfa_style-constituent div, .lfa_style-constituent .fsFullName:nth-child(2){
+	margin-bottom: 20px;
+}
+
+.lfa_style-constituent .fsEmail>div{
+	display: block;
+}
+
+/* Summer Section styles ----------------------- */
+.lfa_style-summer_padding_10px header{
+	padding-top:10px;
+	padding-left:10px;
+}
+
+.lfa_style-summer_padding_10px .fsElementContent{
+	margin-top:-30px;
+}
+
+/* Facts and Figures infographic styles ------------------------ */
+.lfa_style-infographic-box > header{
+	height:150px;
+}
+
+.lfa_style-infographic-box-no-title > header{
+	height:5px;
+}
+
+/* Flag sprite animation styles ---------------- */
+@media screen and (min-width: 671px){
+	#lfa_style-flag_sprite_container{
+		width:130px;
+		height:130px;
+		display:block;
+		margin: auto;
+		background-image: url("https://resources.finalsite.net/images/v1555094235/lakeforest/uniln7tc3lhkzewubkf5/our_school-flag_sprite-130px.svg");
+		animation: sprite 8s steps(7) infinite;
+	}
+
+	@keyframes sprite{
+		100%{
+			background-position: -910px;
+		}
+	}
+}
+
+@media screen and (max-width: 670px){
+  #lfa_style-flag_sprite_container{
+  	width:70px;
+  	height:70px;
+  	margin:auto;
+  	display:block;
+    background-image: url("https://resources.finalsite.net/images/v1555354509/lakeforest/ws89rs8ec0h2pmgndny7/our_school-single_flag.svg");
+  }
+}
+
